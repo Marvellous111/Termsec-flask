@@ -3,11 +3,12 @@ from scapy.arch.windows import get_windows_if_list
 from .detection import analyze_traffic
 import time
 from pprint import pprint
+from data.packetdata import packets
 
 
 conf.verb = 0 # Disable verbose mode
 
-packets = []
+# packets = []
 
 def parse_packet(packet):
   """Sniff callback function

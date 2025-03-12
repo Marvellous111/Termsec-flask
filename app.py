@@ -1,9 +1,10 @@
-from flask import Flask 
+from flask import Flask, flash
 from src.traffic import packet_sniffer
 import time
 from src.api import register_routes
 
 app = Flask(__name__)
+app.secret_key = "Termsec_secret_key"
 register_routes(app)
 
 @app.route('/')

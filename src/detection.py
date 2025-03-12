@@ -1,7 +1,7 @@
 # src/detection.py
 from sklearn.ensemble import IsolationForest
 import numpy as np
-from src.traffic import packets
+from data.packetdata import packets
 
 packet_counts = []
 
